@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "supermemory": {
+      "command": "/path/to/your/project/venv/bin/python",
+      "args": [
+        "/path/to/your/project/supermemory_mcp_server.py"
+      ],
+      "env": {
+        "SUPERMEMORY_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}
