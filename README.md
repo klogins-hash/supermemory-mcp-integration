@@ -1,6 +1,28 @@
 # Supermemory MCP Integration for Claude
 
-This project provides an MCP (Model Context Protocol) server that integrates Supermemory with Claude Desktop, allowing you to search and manage your memories directly from Claude conversations.
+This project provides a custom MCP (Model Context Protocol) server that integrates Supermemory with Claude Desktop, allowing you to search and manage your memories directly from Claude conversations.
+
+## ⚠️ Official Supermemory MCP Available
+
+Supermemory now offers an official MCP server with SSE transport. You can use either:
+
+### Option 1: Official Supermemory MCP (Recommended)
+Get the latest version from [app.supermemory.ai](https://app.supermemory.ai):
+1. Sign in to your Supermemory account
+2. Navigate to "Connect to your AI" → Select Claude
+3. Get your unique MCP URL: `https://mcp.supermemory.ai/[YOUR_UNIQUE_ID]/sse`
+4. Install with: `npx install-mcp [YOUR_URL] --client claude`
+
+**Benefits**: Always up-to-date, officially maintained, SSE transport
+
+### Option 2: This Custom Implementation
+Use this repository for:
+- Custom modifications and extensions
+- Learning how MCP servers work
+- Offline/local-first operation
+- Integration with other MCP-compatible tools
+
+**Note**: Both implementations work with Supermemory's v3 API. This custom version uses stdio transport instead of SSE.
 
 ## Features
 
